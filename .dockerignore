@@ -1,0 +1,6 @@
+.git
+**/.DS_Store
+**/__pycache__
+pipeline/scripts/config.sh
+pipeline/scripts/*.bak
+skill

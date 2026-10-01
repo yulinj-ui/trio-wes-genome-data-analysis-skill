@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+*.pyc
+# 病例配置与数据一律不进仓库
+pipeline/scripts/config.sh
+pipeline/scripts/config.sh.*
+*.bak
+pipeline/scripts/phenotype_HPO_*.txt
+pipeline/scripts/panel_pheno_*.txt
+*.fq.gz
+*.fastq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+*.tbi
+*.g.vcf.gz
+work/
+results/
+logs/
+refs/
