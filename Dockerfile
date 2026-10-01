@@ -33,7 +33,9 @@ ENV TRIO_IN_CONTAINER=1 \
 # 构建期自检：关键工具必须可执行，否则直接构建失败（不把坏镜像推出去）
 RUN java -version && samtools --version | head -1 && bcftools --version | head -1 \
  && bwa-mem2 version && gatk --version | head -3 && snpEff -version \
- && mosdepth --version && slivar 2>&1 | grep -i version && somalier 2>&1 | grep -i version
+ && mosdepth --version && somalier 2>&1 | grep -i version \
+ && { slivar 2>&1 || true; } | grep -i version
+# ↑ 构建 shell 带 pipefail，而 slivar 无参数时退出码为 1，需 || true 吞掉
 
 WORKDIR /pipeline/scripts
 # micromamba 镜像的 entrypoint 会激活 base 环境；默认打印用法
