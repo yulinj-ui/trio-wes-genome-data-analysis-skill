@@ -1,0 +1,81 @@
+# 表型驱动候选基因 panel —— 双肾发育不全/CAKUT + 右心系统先心（复发性）
+# 格式: GENE <TAB> 主要遗传模式 <TAB> 关联表型/备注
+# 用途: 05_inheritance_filter 先在此 panel 内做遗传模型筛选（tier-1），
+#       再对全外显子做 tier-2 兜底（避免漏掉 panel 外的强候选）。
+# ★ 本 panel 为工程起点，非诊断结论；最终以变异级 ACMG 判读为准。
+#
+# ============ A. 肾脏不发育 / 严重 CAKUT（最契合"双肾未见结构"）============
+GREB1L	AD(不完全外显,可生殖腺嵌合)	肾不发育±心脏±内耳；复发+亲代阴性的头号候选
+ITGA8	AR	双肾不发育/发育不全
+RET	AD/AR	肾不发育、CAKUT
+GDNF	AD	肾发育
+FGF20	AR	肾不发育
+FGFR1	AD	CAKUT、Kallmann谱
+PAX2	AD	肾-视乳头缺损综合征、肾发育不良
+HNF1B	AD(常de novo/17q12缺失)	肾囊性发育不良、MODY5
+SALL1	AD	Townes-Brocks（肾+心+肢+肛）
+EYA1	AD	鳃-耳-肾(BOR)，含CAKUT
+SIX1	AD	BOR谱
+SIX5	AD	BOR谱
+BMP4	AD	CAKUT、眼
+BMP7	AD	肾发育
+ROBO2	AD	CAKUT、VUR
+SLIT2	AD	CAKUT
+TBX18	AD	CAKUT/输尿管
+DSTYK	AD	CAKUT
+UPK3A	AR	肾发育不良
+NRIP1	AD	CAKUT
+CHD1L	AD	肾发育不良
+FOXC1	AD	CAKUT谱
+GATA3	AD	HDR（甲旁减-耳聋-肾）
+PBX1	AD	CAKUT + 先心 + 膈疝（心肾同现，强候选）
+SOX17	AD	CAKUT/VUR
+DHCR7	AR	Smith-Lemli-Opitz（肾+心+多系统）
+#
+# ============ B. 肾囊性/纤维囊性（对应"多发小囊、回声增强")============
+PKHD1	AR	常染色体隐性多囊肾(ARPKD)，围产期可致死、羊水少
+PKD1	AD	ADPKD（早发/双等位可致重症胎儿表型）
+PKD2	AD	ADPKD
+HNF1B	AD	（见上）囊性发育不良
+NPHP1	AR	肾单位肾痨
+TMEM67	AR	Meckel/Joubert谱（肾囊+其他）
+CC2D2A	AR	Meckel/Joubert谱
+MKS1	AR	Meckel综合征（肾囊+多指+脑膨出，围产致死）
+TMEM216	AR	Meckel/Joubert
+B9D1	AR	Meckel
+CEP290	AR	Meckel/Joubert谱
+NPHP3	AR	肾囊性发育不良、内脏异位
+PKD1L1	AR	内脏异位+肾
+#
+# ============ C. 纤毛病/综合征（肾+心/内脏异位可解释右心异常）============
+ZIC3	XL	内脏异位/右心结构异常（★X连锁，男胎重点）
+NODAL	AD	内脏异位、先心
+CFC1	AD/复杂	内脏异位、先心
+LEFTY2	AD	内脏异位
+GDF1	AR/AD	先心、内脏异位
+MMP21	AR	内脏异位+先心
+PKD1L1	AR	内脏异位
+DNAH5	AR	纤毛不动（内脏异位）
+#
+# ============ D. 综合征性（心+肾同现）============
+CHD7	AD	CHARGE（心+肾+多系统）
+KMT2D	AD	Kabuki（先心+肾）
+KDM6A	XL	Kabuki2（★X连锁）
+TBX1	AD	22q11/DiGeorge（先心+肾+胸腺，注意本例胸腺偏大）
+SALL4	AD	Okihiro/Duane-桡骨（心+肾+肢）
+NIPBL	AD	Cornelia de Lange（心+肾+多系统）
+KMT2A	AD	Wiedemann-Steiner
+#
+# ============ E. Fraser/隐眼综合征（肾不发育 + 喉/眼）============
+FRAS1	AR	Fraser（肾不发育+隐眼+并指）
+FREM2	AR	Fraser
+GRIP1	AR	Fraser
+FREM1	AR	MOTA/BNAR（肾不发育）
+#
+# ============ F. 右心/流出道先心核心基因（兜底心脏表型）============
+NKX2-5	AD	先心、传导
+GATA4	AD	房室间隔、流出道
+TBX5	AD	Holt-Oram（心+肢）
+NOTCH1	AD	左/右心流出道
+JAG1	AD	Alagille（心+肾+肝）
+MYH6	AD	先心
